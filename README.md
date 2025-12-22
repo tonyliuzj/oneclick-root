@@ -2,6 +2,15 @@
 
 A universal shell script for enabling root SSH access across multiple Linux distributions. Works with Oracle OCI as well.
 
+```bash
+curl -fsSL -o root.sh "https://github.com/tonyliuzj/oneclick-root/releases/latest/download/root.sh" && chmod +x root.sh && sudo ./root.sh
+```
+
+```bash
+wget -qO root.sh "https://github.com/tonyliuzj/oneclick-root/releases/latest/download/root.sh" && chmod +x root.sh && sudo ./root.sh
+```
+
+
 ## Overview
 
 This script automates the setup of root SSH access on fresh Linux systems. It detects the package manager, installs required packages, and configures SSH for root login with password authentication.
