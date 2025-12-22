@@ -1,6 +1,6 @@
 # oneclick-root
 
-A universal shell script for enabling root SSH access across multiple Linux distributions.
+A universal shell script for enabling root SSH access across multiple Linux distributions. Works with Oracle OCI as well.
 
 ## Overview
 
