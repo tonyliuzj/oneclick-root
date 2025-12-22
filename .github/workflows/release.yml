@@ -1,0 +1,25 @@
+name: Upload Release Asset
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  upload-asset:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Upload root.sh to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./root.sh
+          asset_name: root.sh
+          asset_content_type: application/x-sh
