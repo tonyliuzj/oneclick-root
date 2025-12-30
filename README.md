@@ -68,4 +68,4 @@ For production systems, consider using SSH key-based authentication instead.
 
 ## License
 
-This project is provided as-is for educational and testing purposes.
+MIT
